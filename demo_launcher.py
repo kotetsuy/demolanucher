@@ -6,7 +6,7 @@ from pathlib import Path
 HOME = Path.home()
 
 DEMOS = {
-    "AIzunda":      HOME / "AIzunda",
+    "AIassistant":      HOME / "AIassistant",
     "LLaVA":        HOME / "LLaVA",
     "RealtimeDepth": HOME / "RealtimeDepth",
 }
@@ -134,7 +134,7 @@ def main(page: ft.Page):
                 ft.Text("デモ起動管理ツール", size=12, color="#666688"),
                 ft.Divider(color="#333355", height=24),
 
-                btn("AIzunda を起動",       make_start_handler("AIzunda"),      "#2e7d32", ft.Icons.PLAY_ARROW_ROUNDED),
+                btn("AIassistant を起動",       make_start_handler("AIassistant"),      "#2e7d32", ft.Icons.PLAY_ARROW_ROUNDED),
                 btn("LLaVA を起動",         make_start_handler("LLaVA"),        "#1565c0", ft.Icons.PLAY_ARROW_ROUNDED),
                 btn("RealtimeDepth を起動", make_start_handler("RealtimeDepth"), "#6a1b9a", ft.Icons.PLAY_ARROW_ROUNDED),
 
